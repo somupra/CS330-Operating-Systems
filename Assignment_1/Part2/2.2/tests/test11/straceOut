@@ -1,0 +1,51 @@
+13198 write(6, "GO\0", 3)               = 3
+13199 write(1, "0", 1)                  = 1
+13198 write(10, "GO\0", 3)              = 3
+13200 write(1, "0", 1)                  = 1
+13198 write(6, "GO\0", 3)               = 3
+13199 write(1, "1", 1)                  = 1
+13198 write(10, "GO\0", 3)              = 3
+13200 write(1, "1", 1)                  = 1
+13198 write(6, "GO\0", 3)               = 3
+13199 write(1, "2", 1)                  = 1
+13198 write(10, "GO\0", 3)              = 3
+13200 write(1, "2", 1)                  = 1
+13198 write(6, "GO\0", 3)               = 3
+13199 write(1, "0", 1)                  = 1
+13198 write(10, "GO\0", 3)              = 3
+13200 write(1, "0", 1)                  = 1
+13198 write(6, "GO\0", 3)               = 3
+13199 write(1, "1", 1)                  = 1
+13198 write(10, "GO\0", 3)              = 3
+13200 write(1, "1", 1 <unfinished ...>
+13198 write(6, "GO\0", 3 <unfinished ...>
+13200 <... write resumed> )             = 1
+13198 <... write resumed> )             = 3
+13199 write(1, "2", 1)                  = 1
+13198 write(10, "GO\0", 3)              = 3
+13200 write(1, "2", 1)                  = 1
+13198 write(6, "GO\0", 3)               = 3
+13199 write(1, "0", 1)                  = 1
+13198 write(10, "GO\0", 3)              = 3
+13200 write(1, "0", 1)                  = 1
+13198 write(6, "GO\0", 3)               = 3
+13199 write(1, "1", 1)                  = 1
+13198 write(10, "GO\0", 3)              = 3
+13200 write(1, "1", 1)                  = 1
+13198 write(6, "GO\0", 3)               = 3
+13199 write(1, "2", 1)                  = 1
+13198 write(10, "GO\0", 3)              = 3
+13200 write(1, "2", 1)                  = 1
+13198 write(6, "GO\0", 3)               = 3
+13199 write(1, "2", 1)                  = 1
+13198 write(10, "GO\0", 3)              = 3
+13200 write(1, "1", 1)                  = 1
+13198 write(1, "p0 p1\np0", 8 <unfinished ...>
+13200 write(1, "child (13200) is terminating.\n", 30 <unfinished ...>
+13198 <... write resumed> )             = 8
+13200 <... write resumed> )             = -1 EBADF (Bad file descriptor)
+13199 write(1, "child (13199) is terminating.\n", 30 <unfinished ...>
+13198 +++ exited with 0 +++
+13200 +++ exited with 0 +++
+13199 <... write resumed> )             = -1 EBADF (Bad file descriptor)
+13199 +++ exited with 0 +++

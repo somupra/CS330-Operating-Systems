@@ -1,0 +1,42 @@
+#include<ulib.h>
+
+
+int main(u64 arg1, u64 arg2, u64 arg3, u64 arg4, u64 arg5)
+{
+    long MB = 0x100000;
+    u64 aligned = 0x180400000;
+    char *addr1 = mmap(NULL, 4096 + 1, PROT_READ, 0);
+    if((long)addr1 < 0)
+    {
+        printf("TEST CASE FAILED\n");
+        return 1;
+    }
+    printf("1 VMA of size 8k from the start\n");
+    pmap(1);
+
+    char * addr2 = mmap(aligned, 2*MB, PROT_WRITE, 1);
+    addr2[0x1000*3] = 'X';
+    pmap(1);
+    char * addr3 = mmap(aligned + 4*MB, 4*MB,  PROT_WRITE, 1);
+
+    char * haddr2 = make_hugepage(addr2, 2*MB, PROT_WRITE, 0);
+    pmap(1);
+    if(addr2[0x1000*3] != 'X'){
+        printf("Faild\n"); return 0;
+    }
+    addr3[2*MB] = 'X';
+    
+    char * haddr3 = make_hugepage(addr3-1, 2*MB, PROT_WRITE, 0);
+    if((long)haddr3 < 0){
+        printf("correct\n");
+        haddr3 = make_hugepage(addr3, 2*MB, PROT_WRITE, 0);
+    }
+    if(addr3[2*MB] != 'X'){
+        printf("ERROR\n");
+    }
+    char * addr4 = mmap(addr2 + 2*MB, 2*MB, PROT_WRITE, 0);
+    char * haddr4 = make_hugepage(addr4, 2*MB, PROT_WRITE, 0);
+    pmap(1);
+    munmap(addr1, 20*MB);
+    return 0;
+}

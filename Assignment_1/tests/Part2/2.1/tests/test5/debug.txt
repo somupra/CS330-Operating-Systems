@@ -1,0 +1,12 @@
+Closing fd[playerID][0][READ]!
+Closing fd[playerID][0][READ]!
+Exec failed.
+Closing fd[playerID][0][READ]!
+Closing fd[playerID][0][READ]!
+Both players created!
+playMatch() Called!
+playRound() Called!
+write() returned: 3
+write() returned: 3
+read() returned: 0
+Failed to read move from player1!

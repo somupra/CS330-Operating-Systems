@@ -1,0 +1,53 @@
+INPUT: : tests/test4/players.txt
+Players: : 0: 3 1: tests/test3/player1 2: tests/test3/player2 3: tests/test3/player3 
+This is BYE: 0
+start: elig
+0 1 2 fin: elig
+start: play
+1 2 fin: play
+start: pairs
+1-2fin: pairs
+now: Starting match
+1 - 2
+Moves: 0 0
+Moves: 1 1
+Moves: 2 2
+Moves: 0 0
+Moves: 1 1
+Moves: 2 2
+Moves: 0 0
+Moves: 1 1
+Moves: 2 2
+Moves: 1 1
+scores afer this round
+0 - 0
+scores afer this round end here
+Loser: 2
+p0 p1 
+elig: 2
+This is BYE: -1
+start: elig
+0 1 fin: elig
+start: play
+0 1 fin: play
+start: pairs
+0-1fin: pairs
+now: Starting match
+0 - 1
+Moves: 0 0
+Moves: 1 1
+Moves: 2 2
+Moves: 0 0
+Moves: 1 1
+Moves: 2 2
+Moves: 0 0
+Moves: 1 1
+Moves: 2 2
+Moves: 2 1
+scores afer this round
+1 - 0
+scores afer this round end here
+Loser: 1
+p0 
+elig: 1
+1

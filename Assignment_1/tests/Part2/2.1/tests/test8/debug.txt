@@ -1,0 +1,76 @@
+Closing fd[playerID][0][READ]!
+Closing fd[playerID][0][READ]!
+Closing fd[playerID][0][READ]!
+Closing fd[playerID][0][READ]!
+Both players created!
+playMatch() Called!
+playRound() Called!
+write() returned: 3
+write() returned: 3
+read() returned: 1
+read() returned: 1
+[Inside playRound]result: 2
+[Inside playMatch]result: 2
+playRound() Called!
+write() returned: 3
+write() returned: 3
+read() returned: 1
+read() returned: 1
+[Inside playRound]result: 1
+[Inside playMatch]result: 1
+playRound() Called!
+write() returned: 3
+write() returned: 3
+read() returned: 1
+read() returned: 1
+[Inside playRound]result: 2
+[Inside playMatch]result: 2
+playRound() Called!
+write() returned: 3
+write() returned: 3
+read() returned: 1
+read() returned: 1
+[Inside playRound]result: 2
+[Inside playMatch]result: 2
+playRound() Called!
+write() returned: 3
+write() returned: 3
+read() returned: 1
+read() returned: 1
+[Inside playRound]result: 2
+[Inside playMatch]result: 2
+playRound() Called!
+write() returned: 3
+write() returned: 3
+read() returned: 1
+read() returned: 1
+[Inside playRound]result: 1
+[Inside playMatch]result: 1
+playRound() Called!
+write() returned: 3
+write() returned: 3
+read() returned: 1
+read() returned: 1
+[Inside playRound]result: 0
+[Inside playMatch]result: 0
+playRound() Called!
+write() returned: 3
+write() returned: 3
+read() returned: 1
+read() returned: 1
+[Inside playRound]result: 0
+[Inside playMatch]result: 0
+playRound() Called!
+write() returned: 3
+write() returned: 3
+read() returned: 1
+read() returned: 1
+[Inside playRound]result: 1
+[Inside playMatch]result: 1
+playRound() Called!
+write() returned: 3
+write() returned: 3
+read() returned: 1
+read() returned: 1
+[Inside playRound]result: 0
+[Inside playMatch]result: 0
